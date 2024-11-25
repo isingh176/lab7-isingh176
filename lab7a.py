@@ -16,7 +16,7 @@ def format_time(t):
 
 def sum_times(t1, t2):
     """Add two time objests and return the sum."""
-    sum = Time(0,0,0)    # Initialize a new Time object for the sum with all fields set to 0
+    sum = Time(0,0,0)    # Initialize a new Time object for the sum with all fields set to zero
     sum.hour = t1.hour + t2.hour
     sum.minute = t1.minute + t2.minute
     sum.second = t1.second + t2.second
