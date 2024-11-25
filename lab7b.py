@@ -34,14 +34,14 @@ def sum_times(t1, t2):
 def change_time(time, seconds):
     time.second += seconds
 
-    while time.second >= 60:
+    while time.second >= 60:   # Adjust seconds to ensure they remain within the 0-59 range by borrowing from or carrying to minutes.
         time.second -= 60
         time.minute +=1
     while time.second < 0:
         time.second += 60
         time.minute -= 1
 
-    while time.minute >= 60:
+    while time.minute >= 60:   # Adjust minutes to ensure they remain within the 0-59 range by borrowing from or carrying to hours.
         time.minute -= 60
         time.hour += 1
     while time.minute <0:
